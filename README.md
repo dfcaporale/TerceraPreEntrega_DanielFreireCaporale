@@ -2,7 +2,7 @@
 
 ### Package download and setup:
 
-`$ git clone git clone https://github.com/dfcaporale/TerceraPreEntrega_DanielFreireCaporale.git`
+`$ git clone https://github.com/dfcaporale/TerceraPreEntrega_DanielFreireCaporale.git`
 
 `$ cd TerceraPreEntrega_DanielFreireCaporale/WorldTickets/`
 
