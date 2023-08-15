@@ -8,4 +8,4 @@
 
 `$ python manage.py runserver`
 
-Open web browser and navigate to the homepage of the site through http://127.0.0.1:8000/
+Open web browser and navigate to the homepage of the site through `localhost:8000`
