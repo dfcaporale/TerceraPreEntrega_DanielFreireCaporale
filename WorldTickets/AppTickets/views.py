@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Event, Artist
+from .models import *
 from AppTickets.forms import ArtistForm
 
 
@@ -35,3 +35,14 @@ def artistForm(request):
         miForm = ArtistForm()
     contexto = {"form": miForm }
     return render(request, "AppTickets/artistForm.html", contexto)
+
+def search_(request):
+    if request.GET['search']:
+        pattern = request.GET['search']
+        artistas_ = Artist.objects.filter(name__icontains=pattern)
+        contexto = {"artistas": artistas_, 'title': f'Artists containing the pattern "{pattern}"'}
+        return render(request, "AppTickets/artists.html", contexto)
+    return HttpResponse("Please, indicate a pattern to be searched")
+
+def artistSearch(request):
+    return render(request, "AppTickets/artistSearch.html")
