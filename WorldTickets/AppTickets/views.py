@@ -24,8 +24,7 @@ def clients(request):
 def artistForm(request): 
     if request.method == "POST":
         miForm = ArtistForm(request.POST) # info comes from the html
-        if miForm.is_valid:
-
+        if miForm.is_valid():
             artist_name = miForm.cleaned_data.get('name')
             artist_webpage = miForm.cleaned_data.get('webpage')
             artist = Artist(name=artist_name, webpage=artist_webpage)
