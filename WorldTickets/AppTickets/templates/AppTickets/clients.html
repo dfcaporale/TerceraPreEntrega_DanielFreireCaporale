@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    CLIENTS
-</body>
-</html>
+{% extends 'AppTickets/base.html' %}
+{% load static %}
+
+{% block title %}
+    World Tickets
+{% endblock title %}
+
+
+{% block content %}
+    <h3>Clients</h3>
+{% endblock content %}
+
+{% block mainProducts %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <!--<th>{{ Id }}</th>-->
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for cli in clientes %} <!-- field name in the path from urlpatterns -->
+        <tr> 
+            <!--<td>{{ a.id }}</td>-->
+            <td>{{ cli.firstName }}</td>
+            <td>{{ cli.lastName }}</td>
+            <td>{{ cli.email }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+{% endblock mainProducts %}
