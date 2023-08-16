@@ -14,7 +14,7 @@ The website is dedicated to a ticket-selling service.
 
 Currently, the app allows navigation through the buttons: Home, Artists, Events, and Search Artist.
 
-The database includes the modules: Artist, Event, and Client; the latter can be accessed through localhost:8000/clients/.
+The database includes the modules: Artist, Event, and Client; the latter can be accessed through [localhost:8000/clients/](http://localhost:8000/clients/)
 
 New data can be added using the following forms:
 - Add a new artist: [localhost:8000/artist_form/](http://localhost:8000/artist_form/)
