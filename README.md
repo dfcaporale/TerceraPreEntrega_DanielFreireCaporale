@@ -8,15 +8,15 @@
 
 `$ python manage.py runserver`
 
-Open web browser and navigate to the homepage through [localhost:8000](http://localhost:8000)
+Open a web browser and navigate to the homepage using localhost:8000.
 
-The site is devoted to a tickets-sell service.
+The website is dedicated to a ticket-selling service.
 
-So far, the app allows navigation through the buttons: `Home`, `Artists`, `Events` and `Search Artist`.
+Currently, the app allows navigation through the buttons: Home, Artists, Events, and Search Artist.
 
-The database contains the modules: `Artist`, `Event` and `Client`; the last is seen through [localhost:8000/clients/](http://localhost:8000/clients/).
+The database includes the modules: Artist, Event, and Client; the latter can be accessed through localhost:8000/clients/.
 
-New data can be added with the following forms:
-- New artist: [localhost:8000/artist_form/](http://localhost:8000/artist_form/)
-- New event: [localhost:8000/event_form/](http://localhost:8000/event_form/)
-- New client: [localhost:8000/new_client/](http://localhost:8000/new_client/)
+New data can be added using the following forms:
+- Add a new artist: [localhost:8000/artist_form/](http://localhost:8000/artist_form/)
+- Add a new event: [localhost:8000/event_form/](http://localhost:8000/event_form/)
+- Add a new client: [localhost:8000/new_client/](http://localhost:8000/new_client/)
